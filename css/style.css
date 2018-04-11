@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 40px;
+    background-color: rgb(0, 0, 179);
+    color: white;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 40px);
+}
+
+.navigator {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    background: rgb(49, 49, 49);
+    color: white;
+    font-size: .9em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-items {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: scroll;
+}
+
+.nav-items > div {
+    border-top: 2px solid turquoise;
+}
+
+.nav-items > div > p {
+    background-color: rgb(121, 120, 120);
+    padding: 5px 0 5px 5px;
+}
+
+.nav-search {
+    flex-basis: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.task-col {
+    flex-basis: 150px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border-left: 1px solid lightgrey;
+}
+
+.task-col > p {
+    font-size: .9em;
+    border-top: 2px solid turquoise;
+    background-color: rgb(121, 120, 120);
+    padding: 5px 0 5px 5px;
+    color: white;
+}
+
+.tasks
+{
+    height: calc(100vh - 40px - 28px);
+    overflow: scroll;    
+}
+
+.tasks > div > p {
+    color: white;
+    background-color: rgb(165, 165, 165);
+    padding: 5px 0 5px 5px;
+    border-top: 1px solid grey;
+}
+
+.tasks > div > div {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.task-item {
+    display: flex;
+}
+
+.task-item > p {
+    font-size: .8em;
+}
+
+.top-date > div {
+    background-color: rgb(253, 253, 203);
+}
